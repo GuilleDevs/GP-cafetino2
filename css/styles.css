@@ -93,21 +93,53 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 60px 40px;
+    gap: 60px 50px;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   .categorias-top .categoriash1 {
-    width: 100%;
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 0px;
-    background-color: #F7EAD2; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px;
-    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-    border-bottom: 4px solid #BB8F60;
-    color: #333; /* Color llamativo */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+    letter-spacing: .5em;
+    border: 4px double rgba(0, 0, 0, 0.25);
+    border-width: 4px 0;
+    padding: 0px;
+    top: 18%;
+    left: 50%;
+    width: 100%;
+  
+  }
+
+  .spancategoria {
+    font: 700 4em/1;
+    font-size: 1.5cm;
+    font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-shadow: 0 0 80px black;
+  color: transparent;
+  background: black; /* Cambia el fondo del texto a negro */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
   }
 
   .categorias-top .contenedor-categorias {
@@ -187,21 +219,56 @@
 	gap: 2rem;
 	margin-bottom: 3rem;
   }
-
-  .productos-top h1 {
-    width: 90%;
-    justify-content: center;
-    text-align: center;
-    margin-left: 60px;
-    margin-bottom: 0px;
-    background-color: #F7EAD2; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px;
-    text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-    border-bottom: 4px solid #BB8F60;
-    color: #333; /* Color llamativo */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+  .productos-titulo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
+  .productosh1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .5em;
+    border: 4px double rgba(0, 0, 0, 0.25);
+    border-width: 4px 0;
+    padding: 0px;
+    top: 18%;
+    left: 50%;
+    width: 100%;
+    
+    
+  }
+
+  .spanproducto {
+  font: 700 4em/1;
+  font-size: 1.5cm;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  text-shadow: 0 0 80px black;
+  color: transparent;
+  background: black; /* Cambia el fondo del texto a negro */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
+  
 
   .contenedor-productos {
     display: flex;
@@ -211,7 +278,6 @@
 
   .producto-carta {
     background-color: #fff;
-	  
 	  border-radius: 15px;
 	  cursor: pointer;
 	  box-shadow: 0 3px 6px black;
@@ -249,7 +315,7 @@
 	  grid-template-columns: repeat(4, 1fr);
 	  grid-template-rows: repeat(2, 30rem);
 	  gap: 1.0rem;
-	  margin-bottom: 3rem;
+	  margin-bottom: 0;
   }
 
   .galeria img {
@@ -273,6 +339,9 @@
     display: flex;
 	  flex-direction: column;
     gap: 0.5rem;
+    margin-left: 0px;
+    padding-top: 92px;
+  
   }
 
   .sobre-nosotros {
@@ -281,10 +350,57 @@
 	  gap: 3rem;
     padding: 30px;
     justify-content: center;
-  }
-  
-  .nosotrosh1 {
     text-align: center;
+
+  }
+
+  /*.nosotrosh1 {
+    text-align: center;
+    padding-top: 80px;
+  }*/
+
+  .nosotrosh1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .5em;
+    
+    border: 4px double rgba(0, 0, 0, 0.25);
+    border-width: 4px 0;
+    padding: 0px;
+    top: 18%;
+    left: 50%;
+    width: 100%;
+    
+  }
+
+  .spannosotros {
+    font: 700 4em/1;
+    font-size: 1.5cm;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  text-shadow: 0 0 80px black;
+  color: transparent;
+  background: black; /* Cambia el fondo del texto a negro */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes aitf {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
   }
 
   
@@ -305,7 +421,7 @@
     height: 260px;
   }
   .card-title {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
   }
   .fechanosotros {
 	  font-size: 12px;
@@ -356,7 +472,6 @@
   }
   .wrapper .icon {
     position: relative;
-    
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
@@ -433,5 +548,74 @@
 @media (max-width: 599px) {
   .navbar-nav {
     padding-left: 0;
+  }
+  .main__vista-principal {
+    width: 599px;
+    height: 33rem;
+    background-size: cover;
+    background-image: linear-gradient(100deg, #000000, #00000020), url(../images/portada\ 4.jpg);
+    background-position: center;
+  }
+  .main__vista-principal--titulo {
+    color: white;
+    padding: 100px 0 0 50px;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+  }
+  .main___vista-principal--titulo-span {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto-carta {
+	  border-radius: 15px;
+	  box-shadow: 0 3px 6px black;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .galeria {
+    grid-template-rows: repeat(2, 15rem);
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #515546;
+  }
+  .footer__logo {
+    order: 1;
+    margin-left: 0;
+    align-items: center;
+  }
+  .footer__redes {
+    order: 3;
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    width: 50%;  
+  }
+  .footer__encuentranos {
+    order: 2;
+    text-align: center;
+  }
+  .wrapper {
+    padding: 0;
   }
 }
