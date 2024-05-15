@@ -345,6 +345,11 @@
   }
 
   .sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  /*.sobre-nosotros {
     display: grid;
 	  grid-template-columns: repeat(3, 1fr);
 	  gap: 3rem;
@@ -352,7 +357,7 @@
     justify-content: center;
     text-align: center;
 
-  }
+  }*/
 
   /*.nosotrosh1 {
     text-align: center;
@@ -376,21 +381,21 @@
   .spannosotros {
     font: 700 4em/1;
     font-size: 1.5cm;
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 0;
-  padding: 10px;
-  display:flex;
-  justify-content: center;
-  text-shadow: 0 0 80px black;
-  color: transparent;
-  background: black; /* Cambia el fondo del texto a negro */
-  -webkit-background-clip: text;
-  background-clip: text;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    text-shadow: 0 0 80px black;
+    color: transparent;
+    background: black; /* Cambia el fondo del texto a negro */
+    -webkit-background-clip: text;
+    background-clip: text;
 
   /* Animate Background Image */
 
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
 
   /* Activate hardware acceleration for smoother animations */
 
@@ -422,6 +427,7 @@
   }
   .card-title {
     font-size: 1.8rem;
+    text-align: center;
   }
   .fechanosotros {
 	  font-size: 12px;
@@ -550,7 +556,7 @@
     padding-left: 0;
   }
   .main__vista-principal {
-    width: 599px;
+    width: 100%;
     height: 33rem;
     background-size: cover;
     background-image: linear-gradient(100deg, #000000, #00000020), url(../images/portada\ 4.jpg);
